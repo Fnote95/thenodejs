@@ -1,0 +1,44 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: sample-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: vfv-api
+    ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  rules:
+  - host: "vfv.et5fm.gebeya.co"
+    http:
+      paths:
+      - path: /users/*
+        backend:
+          serviceName: vfv
+          servicePort: 80
+      - path: /users
+        backend:
+          serviceName: vfv
+          servicePort: 80
+      - path: /admin/*
+        backend:
+          serviceName: vfv
+          servicePort: 80
+      - path: /admin
+        backend:
+          serviceName: vfv
+          servicePort: 80
+      - path: /auth/*
+        backend:
+          serviceName: vfv
+          servicePort: 80
+      - path: /auth
+        backend:
+          serviceName: vfv
+          servicePort: 80
+      - path: /index/*
+        backend:
+          serviceName: vfv
+          servicePort: 80
+      - path: /index
+        backend:
+          serviceName: vfv
+          servicePort: 80
