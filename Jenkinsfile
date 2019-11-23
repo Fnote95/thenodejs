@@ -3,7 +3,7 @@ pipeline {
     PROJECT = "th-fnote"
     APP_NAME = "thenodejs"
     FE_SVC_NAME = "${APP_NAME}"
-    CLUSTER = "standard-cluster-1"
+    CLUSTER = "thenodejs"
     CLUSTER_ZONE = "us-central1-a"
     IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
     JENKINS_CRED = "${PROJECT}"
