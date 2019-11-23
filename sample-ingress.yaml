@@ -3,42 +3,42 @@ kind: Ingress
 metadata:
   name: sample-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: vfv-api
+    kubernetes.io/ingress.global-static-ip-name: thenodejs-api
     ingress.kubernetes.io/ssl-redirect: "true"
 spec:
   rules:
-  - host: "vfv.et5fm.gebeya.co"
+  - host: "node.et5fm.gebeya.co"
     http:
       paths:
-      - path: /users/*
+      - path: /courses/*
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
-      - path: /users
+      - path: /courses
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
-      - path: /admin/*
+      - path: /imprint/*
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
-      - path: /admin
+      - path: /imprint
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
-      - path: /auth/*
+      - path: /landingPage/*
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
-      - path: /auth
+      - path: /landingPage
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
-      - path: /index/*
+      - path: /settings/*
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
-      - path: /index
+      - path: /settings
         backend:
-          serviceName: vfv
+          serviceName: thenodejs
           servicePort: 80
