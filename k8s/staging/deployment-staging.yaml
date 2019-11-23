@@ -48,4 +48,4 @@ spec:
         #args: ['--env="HOST_IP=$(HOST_IP)"','--env="API_URL=$(API_URL)"','--env="MONGODB_URL=$(MONGODB_URL)"']
         ports:
         - name: payments
-          containerPort: 2000
+          containerPort: 3000
