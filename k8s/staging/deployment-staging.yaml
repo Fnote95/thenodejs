@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: gcr.io/th-fnote/vfv:1.0.0
+        image: gcr.io/th-fnote/thenodejs:1.0.0
         env:
           - name: MONGODB_URL
             valueFrom:
