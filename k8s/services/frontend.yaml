@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vfv
+  name: thenodejs
 spec:
   type: LoadBalancer
   ports:
@@ -9,5 +9,5 @@ spec:
       port: 80
       targetPort: 2000
   selector:
-    app: vfv
+    app: thenodejs
     role: api
