@@ -5,16 +5,16 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: vfv
+      app: thenodejs
       role: api
   replicas: 1
   template:
     metadata:
       name: api-deployment
       labels:
-        app: vfv
+        app: thenodejs
         role: api
-        env: staging
+        env: devops-final
     spec:
       containers:
       - name: node-app
